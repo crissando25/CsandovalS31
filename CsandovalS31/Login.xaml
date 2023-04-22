@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CsandovalS31.Login">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="5" Spacing="5">
+                <Frame Background="Green" CornerRadius="0">
+                 <Label Text="-----MENU-------" FontSize="30" HorizontalTextAlignment="Center"></Label>
+                </Frame>
+                <Label Text="Incio" FontSize="20" TextColor="Blue" HorizontalTextAlignment="Center"/>
+                <Image Source="Login.jpeg" WidthRequest="100" HeightRequest="100"/>
+                <!--<Entry x:Name="txtdatos" Placeholder="Datos" MaxLength="5"></Entry>-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="USUARIO" FontSize="18" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtUsuario" Placeholder="USUARIO" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="CONTRASEÑA" FontSize="18" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtContraseña" Placeholder="CONTRASEÑA" Grid.Row="1" Grid.Column="1" IsPassword="True" />
+                    <Button x:Name="btnIniciar" Text="INICIAR" Clicked="btnIniciar_Clicked" Grid.Row="2" Grid.Column="0"/>
+                    <Button x:Name="btnRegistrar" Text="REGISTRAR" Clicked="btnRegistrar_Clicked" Grid.Row="2" Grid.Column="2"/>
+                    <Button x:Name="btnLimpiar" Text="LIMPIAR" HorizontalOptions="Start" Background="Fuschia" TextColor="Aqua" Clicked="btnLimpiar_Clicked" Grid.Row="2" Grid.Column="1"></Button>
+               
+                
+                
+                
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -26,7 +26,7 @@ namespace CsandovalS31
         {
             string usuario = txtUsuario.Text;
             string contraseña = txtContraseña.Text;
-            if (usuario == "cris" && contraseña == "1988")
+            if (usuario == "estudiante2023" && contraseña == "uisrael2023")
             {
                 Navigation.PushAsync(new Principal());
             }
